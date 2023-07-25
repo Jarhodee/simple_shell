@@ -1,4 +1,4 @@
-#include "KGshell_main.h"
+#include "KDshell_main.h"
 
 char *get_location(char *command){
     char *path, *path_copy, *path_token, *file_path;
