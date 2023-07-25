@@ -1,4 +1,4 @@
-#include "main.h"
+#include "KDshell_main.h"
 
 void execmd(char **argv){
     char *command = NULL;
