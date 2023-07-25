@@ -1,9 +1,9 @@
 #include "KDshell_main.h"
 
 /**
- * main - build a simple shell that takes in prompts
- * @argc: argument count to be used
- * @argv: argument array to be used
+ * main - this build a simple shell that takes in prompts
+ * @argc: this is the argument count to be used
+ * @argv: this is the argument array to be used
  * Return: 0 on success
  */
 
