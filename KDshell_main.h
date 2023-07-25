@@ -1,3 +1,6 @@
+#ifndef KDSHELL_H
+#define KDSHELL_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,3 +11,5 @@
 void execmd(char **argv);
 void execmd(char **argv);
 char *get_location(char *command);
+
+#endif

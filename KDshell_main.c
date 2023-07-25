@@ -1,6 +1,14 @@
-#include "main.h"
+#include "KDshell_main.h"
+
+/**
+ * main - build a simple shell that takes in prompts
+ * @argc: argument count to be used
+ * @argv: argument array to be used
+ * Return: 0 on success
+ */
 
 int main(int ac, char **argv)
+
 {
 	char *prompt = "(KDshell) $ ";
 	char *lineptr = NULL, *lineptr_copy = NULL;
@@ -19,7 +27,7 @@ int main(int ac, char **argv)
 	{
 		printf("%s", prompt);
 		nchars_read = getline(&lineptr, &n, stdin);
-
+		
 		/* checking if the getline function failed or reached EOF or the user used a CTRL + D command*/
 		if (nchars_read == -1)
 		{
