@@ -2,3 +2,4 @@
 .sh
 # does not ignore the README.md file
 !README.md
+git-push.sh*
