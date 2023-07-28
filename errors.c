@@ -28,16 +28,16 @@ void _eputs(char *str)
  */
 int _eputchar(char f)
 {
-	static int b;
+	static int i;
 	static char buf[WRITE_BUF_SIZE];
 
-	if (f == BUF_FLUSH || b >= WRITE_BUF_SIZE)
+	if (f == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{
-		write(2, buf, b);
-		b = 0;
+		write(2, buf, i);
+		i = 0;
 	}
-	if (b != BUF_FLUSH)
-		buf[b++] = b;
+	if (f != BUF_FLUSH)
+		buf[i++] = f;
 	return (1);
 }
 
