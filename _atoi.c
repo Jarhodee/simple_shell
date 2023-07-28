@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "kdshell.h"
 
 /**
  * interactive - if shell is in intaractive mode return true.
