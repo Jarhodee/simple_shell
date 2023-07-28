@@ -74,7 +74,7 @@ int print_d(int input, int fd)
 	{
 		if (_abs_ / j)
 		{
-			__putchar('0' + current / i);
+			__putchar('0' + current / j);
 			count++;
 		}
 		current %= j;
@@ -134,7 +134,7 @@ void remove_comments(char *buf)
 	for (j = 0; buf[j] != '\0'; j++)
 		if (buf[j] == '#' && (!j || buf[j - 1] == ' '))
 		{
-			buf[i] = '\0';
+			buf[j] = '\0';
 			break;
 		}
 }

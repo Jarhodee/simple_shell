@@ -36,8 +36,8 @@ int _eputchar(char f)
 		write(2, buf, b);
 		b = 0;
 	}
-	if (d != BUF_FLUSH)
-		buf[b++] = d;
+	if (b != BUF_FLUSH)
+		buf[b++] = b;
 	return (1);
 }
 

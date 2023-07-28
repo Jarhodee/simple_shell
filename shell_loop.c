@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "kdshell.h"
 
 int hsh(info_t *info, char **av)
 {

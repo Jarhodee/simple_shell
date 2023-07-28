@@ -10,12 +10,12 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, c;
-	char *s = dent;
+	char *s = dest;
 
 	i = 0;
 	while (src[i] != '\0' && i < n - 1)
 	{
-		dent[i] = src[i];
+		dest[i] = src[i];
 		i++;
 	}
 	if (i < n)
@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 		c = i;
 		while (c < n)
 		{
-			dent[c] = '\0';
+			dest[c] = '\0';
 			c++;
 		}
 	}
