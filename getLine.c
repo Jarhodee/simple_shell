@@ -141,7 +141,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	if (!new_p) /* MALLOC FAILURE! */
 		return (p ? free(p), -1 : -1);
 
-	if (s)
+	if (j)
 		_strncat(new_p, buf + i, k - i);
 	else
 		_strncpy(new_p, buf + i, k - i + 1);
@@ -151,7 +151,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	p = new_p;
 
 	if (length)
-		*length = s;
+		*length = j;
 	*ptr = p;
 	return (j);
 }

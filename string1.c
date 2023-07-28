@@ -56,7 +56,7 @@ int _putchar(char c)
 		ix = 0;
 	}
 	if (c != BUF_FLUSH)
-		buf[i++] = c;
+		buf[ix++] = c;
 	return (1);
 }
 
